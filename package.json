@@ -2,7 +2,7 @@
   "name": "ghom-list",
   "author": "ghom",
   "license": "ISC",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Better Array",
   "main": "dist/index.js",
   "types": "dist",
@@ -16,14 +16,16 @@
   "scripts": {
     "prettier": "prettier src package.json readme.md tsconfig.json --write",
     "build": "git rm -r --ignore-unmatch -f ./dist && npm run prettier && tsc",
+    "prepublish": "yarn build && yarn test",
     "test": "node test.js"
   },
   "keywords": [
-    "discord.js",
-    "bot",
-    "typescript",
-    "handler",
-    "command-handler"
+    "array",
+    "better",
+    "list",
+    "collection",
+    "map",
+    "set"
   ],
   "engines": {
     "node": "v14.3.0",
