@@ -1,4 +1,4 @@
-class Collection<T> extends Array<T> {
+class List<T> extends Array<T> {
   constructor(
     iterator?: Array<T> | Map<any, T> | Set<T> | IterableIterator<T>
   ) {
@@ -13,12 +13,12 @@ class Collection<T> extends Array<T> {
     }
   }
 
-  slice(start?: number, end?: number): Collection<T> {
-    return new Collection(super.slice(start, end))
+  slice(start?: number, end?: number): List<T> {
+    return new List(super.slice(start, end))
   }
 
-  divide(itemCountByDivision: number): Collection<Collection<T>> {
-    const divided = new Collection<Collection<T>>()
+  divide(itemCountByDivision: number): List<List<T>> {
+    const divided = new List<List<T>>()
     const divisionCount = Math.ceil(this.length / itemCountByDivision)
     for (let i = 0; i < divisionCount; i++) {
       divided.push(
@@ -29,4 +29,4 @@ class Collection<T> extends Array<T> {
   }
 }
 
-module.exports = Collection
+module.exports = List

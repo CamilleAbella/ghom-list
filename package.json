@@ -1,9 +1,9 @@
 {
-  "name": "@ghom/collection",
+  "name": "ghom-list",
   "author": "ghom",
   "license": "ISC",
   "version": "0.0.1",
-  "description": "Discord bot core in TypeScript.",
+  "description": "Better Array",
   "main": "dist/index.js",
   "types": "dist",
   "prettier": {

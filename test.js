@@ -1,6 +1,6 @@
 
-const Collection = require("./dist/index")
+const List = require("./dist/index")
 
-const collection = new Collection([1, 2, 3, 4])
+const list = new List([1, 2, 3, 4])
 
-console.log(...collection)
+console.log(...list)
